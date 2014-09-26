@@ -7406,8 +7406,8 @@ a.badge:focus {
   font-style: normal;
 }
 *,
-input { /* gc-changed: PtMono -> OpenSans */
-  font-family: OpenSans, "Courier New", Courier, monospace;
+input {
+  font-family: PtMono, "Courier New", Courier, monospace;
   font-style: normal;
   font-weight: normal;
 }
@@ -7518,20 +7518,20 @@ small {
   height: 300px;
 }
 /* colors */
-.home-item.orange {
-  background-color: #e98816;
+.home-item.green1 {
+  background-color: #baba27;
 }
-.home-item.lightblue {
-  background-color: #77CCEE;
-}
-.home-item.gold {
-  background-color: #EEBB44;
+.home-item.green2 {
+  background-color: #9ec73d;
 }
 .home-item.red {
-  background-color: #b91d11;
+  background-color: #ff3817;
+}
+.home-item.purple {
+  background-color: #b91d47;
 }
 .home-item.blue {
-  background-color: #005e8a;
+  background-color: #0070cf;
 }
 .home-item.lightGrey {
   background-color: #a6a6a6;
@@ -8032,9 +8032,9 @@ p.results-summary strong {
   font-size: 26px;
   line-height: 42px;
   color: #332e1f;
-} /* gc-changed: PtMono -> OpenSans */
+}
 #discover-landing p .highlight {
-  font-family: OpenSans, "Courier New", Courier, monospace;
+  font-family: PtMono, "Courier New", Courier, monospace;
   color: #baba27;
   font-weight: 700;
 }

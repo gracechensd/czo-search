@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" class="ng-app:wcodpApp" ng-app="wcodpApp">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -9,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Cinergi Portal | Home</title>
+    <title>CZO Portal | Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/assets/css/all.css?v=0.4">
@@ -28,15 +27,20 @@
     <![endif]-->
 
     <div class="header container">
+		<!--underconstrution-->
+	<div class="row">
+	<div class="span12" style="background-color:yellow;text-align:center"><img src="/assets/img/under_construction.png"></div>
+	</div>
+	<!--underconstrution-->
 	<div class="row">
 		<div class="span4 brand">
-			<a href="/"><img src="/assets/img/earthcube.png"></a>
+			<a href="/"><img src="/assets/img/czo_logo.png"></a>
 		</div>
 
 		<!--  D E S K T O P   M E N U -->
 		<div class="span8 visible-desktop">
 			<div class="clearfix">
-				<span class="pull-right description subdued"><a href=http://workspace.earthcube.org/cinergi" target="_blank">Community Inventory of EarthCube Resources for Geoscience Interoperability</a></span>
+				<span class="pull-right description subdued">A project of the <a href="http://www.criticalzone.org" target="_blank">Critical Zone Observatories - Search Portal</a></span>
 			</div>
 			<div class="top-nav">
 				<ul class="unstyled inline">
@@ -62,7 +66,7 @@
 						
 						<li>
 						
-							<a href="http://workspace.earthcube.org/cinergi">about</a>
+							<a href="/about">about</a>
 						</li>
 					
 				</ul>
@@ -101,7 +105,7 @@
 					
 					<li>
 					
-						<a href="http://workspace.earthcube.org/cinergi">about</a>
+						<a href="/about">about</a>
 					</li>
 				
 			</ul>				
@@ -114,17 +118,16 @@
 <div class="container" id="home" ng-controller="HomeCtrl">
 	<div class="row packery-container">
 
-		<a class="home-item home-item first-item lightblue span8 clearfix" href="http://workspace.earthcube.org/cinergi">
+		<a class="home-item home-item-larger first-item green1 span8 clearfix" href="http://www.criticalzone.org">
 			<div class="home-item-cntr welcome">
 				<div class="home-item-label clearfix">
 					<div class="pull-left">WELCOME</div>
 				</div>
-				<p class="big">CINERGI: An inventory of EarthCube resources and support resource discovery across the geosciences.<img style="margin-left: 10px;" src="/assets/img/icons/welcome_caret.png"></span></p>			
-				<p><p><p><p>
+				<p class="big">The National CZO Program is a community resource. The Program serves the international scientific community through research, infrastructure, data, and models.</span></p>			
 			</div>
 		</a>
 
-		<div class="home-item home-item-smaller gold span4">
+		<div class="home-item home-item-smaller red span4">
 			<div class="home-item-cntr search">
 				<div ng-cloak class="giantText">{{ recordCount }}</div>
 				<p>registered resources</p>
@@ -137,33 +140,33 @@
 			</div>
 		</div>
 
-		<a class="home-item home-item blue span4 h1" href="http://scicrunch.com/resource?community=52">
-			<div class="home-item-cntr">
-				<div class="home-item-label inverse clearfix">
-					<div class="pull-left">CONTRIBUTE</div>
-				</div>
-				<p class="big">Add resources to our inventory</p>
-				<!--<img class="home-item-icon" src="/assets/img/icons/white_search.png">-->
-			</div>
-		</a>
-
-		<a class="home-item-physical home-item gold span5 h1" href="/discover/#?text=NOAA">
+		<a class="home-item-biological home-item blue span4 h1" href="/discover/#?text=hydrology">
 			<div class="home-item-cntr">
 				<div class="home-item-label inverse clearfix">
 					<div class="pull-left">DISCOVER</div>
 				</div>
-				<p class="big">NOAA Data</p>
-				<!--<img class="home-item-icon" src="/assets/img/icons/white_search.png">-->
+				<p class="big">Hydrologic Data</p>
+				<img class="home-item-icon" src="/assets/img/icons/white_search.png">
+			</div>
+		</a>
+
+		<a class="home-item-marine-debris home-item green2 span5 h1" href="/discover/#?text=meteorological">
+			<div class="home-item-cntr">
+				<div class="home-item-label clearfix">
+					<div class="pull-left">DISCOVER</div>
+				</div>
+				<p class="big">Meteorological Data</p>
+				<img class="home-item-icon" src="/assets/img/icons/white_search.png">
 			</div>			
 
 		</a>
 
-		<a class="home-item home-item red span3 h1" href="http://connections.earthcube.org/resourceviewer/">
+		<a class="home-item-human-use home-item green2 span3 h1" href="/discover/#?text=groundwater">
 			<div class="home-item-cntr">
 				<div class="home-item-label inverse clearfix">
-					<div class="pull-left">PIVOT RESOURCES</div>
+					<div class="pull-left">DISCOVER</div>
 				</div>
-				<p class="big">Domain Inventory</p>
+				<p class="big">Ground water</p>
 				<img class="home-item-icon" src="/assets/img/icons/white_search.png">
 			</div>			
 		</a>
@@ -183,22 +186,22 @@
 			
 		</a> -->
 
-		<a class="home-item home-item-smallest lightGrey span8 clearfix" href="/contributors/">
+		<a class="home-item home-item-smallest lightGrey span8 clearfix" href="http://criticalzone.org/national/people/our-investigators/">
 			<div class="home-item-cntr welcome">
 				<div class="home-item-label inverse clearfix">
-					<div class="pull-left">PIVOT RESOURCES</div>
+					<div class="pull-left">EXPLORE</div>
 				</div>
 				<p class="medium"><span class="strong">Contributors:</span> see who is contributing to the registry. <img style="margin-left: 10px;" src="/assets/img/icons/welcome_caret.png"></span></p>			
 			</div>
 		</a>
 
-		<a class="home-item home-item orange span4 h1" href="http://connections.earthcube.org/memberconnections/">
+		<a class="home-item-physical home-item green2 span4 h1" href="/discover/#?text=Physical">
 			<div class="home-item-cntr">
 				<div class="home-item-label inverse clearfix">
-					<div class="pull-left">EXPLORE</div>
+					<div class="pull-left">DISCOVER</div>
 				</div>
-				<p class="big">Earthcube Geoscience community members</p>
-				
+				<p class="big">Physical Data</p>
+				<img class="home-item-icon" src="/assets/img/icons/white_search.png">
 			</div>			
 		</a>
 
@@ -210,7 +213,7 @@
     <div class="footer container">
 	<div class="row">
 		<div class="span12">
-			<a href="mailto:portal@westcoastoceans.org">Feedback? email: ec_apps@sdsc.edu</a>
+			<a href="mailto:ec_apps@sdsc.edu">Feedback? email: ec_apps@sdsc.edu</a>
 			<span class="pull-right"><a class="subdued" href="/connect">API ACCESS</a></span>
 		</div>
 	</div>

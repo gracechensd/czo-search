@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Cinergi Portal | Connect</title>
+    <title>Critical Zone Observatories Data Portal | Connect</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/assets/css/all.css?v=0.4">
@@ -27,15 +27,20 @@
     <![endif]-->
 
     <div class="header container">
+		<!--underconstrution-->
+	<div class="row">
+	<div class="span12" style="background-color:yellow;text-align:center"><img src="/assets/img/under_construction.png"></div>
+	</div>
+	<!--underconstrution-->
 	<div class="row">
 		<div class="span4 brand">
-			<a href="/"><img src="/assets/img/earthcube.png"></a>
+			<a href="/"><img src="/assets/img/czo_logo.png"></a>
 		</div>
 
 		<!--  D E S K T O P   M E N U -->
 		<div class="span8 visible-desktop">
 			<div class="clearfix">
-				<span class="pull-right description subdued"><a href=http://workspace.earthcube.org/cinergi" target="_blank">Community Inventory of EarthCube Resources for Geoscience Interoperability</a></span>
+				<span class="pull-right description subdued">A project of the <a href="http://www.criticalzone.org" target="_blank">Critical Zone Obervatories</a></span>
 			</div>
 			<div class="top-nav">
 				<ul class="unstyled inline">
@@ -113,20 +118,20 @@
     <!--<div class="container" id="connect" ng-controller="ConnectCtrl">-->
 <div class="container" id="about">
 
-	<!--<div class="row">
+	<div class="row">
 
 		<div class="home-item white span12">
 			<div class="home-item-cntr learn-more">
 				<h3>Connect to data producers and users</h3>
 				<div>
-					<img src="/assets/img/cinergi-image_0.png" alt="Data Network Graphic" align="right" hspace="12" vspace="2" />
-					<p>Cinergi is dedicated to increasing communication between state and federal agencies, tribes, universities, NGOs, and industry to leverage resources for new data collection, develop data best management practices, conduct trainings, and ensure compatibility of regional datasets. </p>
-					<p>The Network is comprised of three working groups: Data, IT, and Outreach, each providing guidance on the Portal activities and making sure we are adopting current standards, compatible technologies, and communicating our mission and goals effectively. New participants are welcome! <a href="http://www.westcoastoceans.org/media/Data_Network_ACT/StatementofSupport_WestCoastOceanDataNetwork_121913_form.pdf" target="_blank">To participate, please fill out the West Coast Ocean Data Network Statement of Support</a>.</p>
-                    <p>Future work includes the development of communication tools for data producers and users and a member directory of contributors. To learn more or participate in our Network, please contact <a href="mailto:todd.r.hallenbeck@westcoastoceans.org">Todd Hallenbeck</a>, or <a href="http://listsmart.osl.state.or.us/mailman/listinfo/west_coast_data_network" target="_blank">subscribe to our network listserv</a>.</p>
+					<img src="/assets/img/czo_tree.jpg" alt="Data Network Graphic" align="right" hspace="12" vspace="2" />
+					<p>The Critical Zone Data Network is dedicated to increasing communication between state and federal agencies, tribes, universities, NGOs, and industry to leverage resources for new data collection, develop data best management practices, conduct trainings, and ensure compatibility of regional datasets. </p>
+					
+                    <p>Need more text here</p>
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 
 	<div class="row">
 
@@ -156,7 +161,7 @@
 				<div>
 					<p>CSW is an open standard created by the Open Geospatial Consortium for discovering, browsing, and querying metadata records from a data catalog.  This portal uses CSW to harvest many of the published resources from our network providers, and in turn publishes a CSW interface that you can connect to.  Access our CSW interface at the following URL using your favorite CSW client:</p>
 					<br/>
-					<p><a target="_blank" href="/geoportal/csw">http://hydro10.sdsc.edu/geoportal/csw</a></p>
+					<p><a target="_blank" href="http://search.criticalzone.org/czoportal/csw">http://search.criticalzone.org/czoportal/csw</a></p>
 				</div>
 			</div>
 		</div>
@@ -171,12 +176,12 @@
 				<hr/>
 
 				<p class="medium">Example 1 - click the following URL to query the capabilities of our CSW and return the results as an XML document.</p>
-				<p class="medium"><a target="_blank" href="/geoportal/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://hydro10.sdsc.edu/geoportal/csw?service=CSW&version=2.0.2&request=GetCapabilities</a></p>
+				<p class="medium"><a target="_blank" href="http://search.criticalzone.org/czoportal/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://search.criticalzone.org/czoportal/csw?service=CSW&version=2.0.2&request=GetCapabilities</a></p>
 
 				<hr/>
 
 				<p>Example 2 - click the following URL to initiate a CSW <i>GetRecords</i> query that returns the first 10 ISO metadata records found in the catalog as an XML document.</p>
-				<p><a target="_blank" href="/geoportal/csw?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&RESULTTYPE=results&TYPENAMES=csw:Record">http://hydro10.sdsc.edu/geoportal/csw?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&RESULTTYPE=results&TYPENAMES=csw:Record</a></p>
+				<p><a target="_blank" href="http://search.criticalzone.org/czoportal/csw?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&RESULTTYPE=results&TYPENAMES=csw:Record">http://search.criticalzone.org/czoportal/csw?REQUEST=GetRecords&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&RESULTTYPE=results&TYPENAMES=csw:Record</a></p>
 			</div>
 		</div>
 	</div>
@@ -192,7 +197,7 @@
 				<div>
 					<p>At the heart of this portal is an ESRI Geoportal data catalog, which provides an easy to use HTTP-based interface for querying resources. Access our Geoportal REST API at:</p>
 					<br/>
-					<p><a target="_blank" href="/geoportal/rest/">http://hydro10.sdsc.edu/geoportal/rest/</a></p>
+					<p><a target="_blank" href="http://search.criticalzone.org/czoportal/rest/">http://search.criticalzone.org/czoportal/rest/</a></p>
 				</div>
 			</div>
 		</div>
@@ -206,7 +211,7 @@
 				<hr/>
 
 				<p>Example 1 - click the following URL to initiate a Geoportal <i>find</i> query that returns the first 10 metadata records in the portal as a JSON document:</p>
-					<p><a target="_blank" href="/geoportal/rest/find/document?f=pjson">http://hydro10.sdsc.edu/geoportal/rest/find/document?f=pjson</a></p>
+					<p><a target="_blank" href="http://search.criticalzone.org/czoportal/rest/find/document?f=pjson">http://search.criticalzone.org/czoportal/rest/find/document?f=pjson</a></p>
 			</div>
 		</div>
 	</div>
@@ -221,7 +226,7 @@
 				<div>
 					<p>OpenSearch is an open standard for search created by Amazon A9 that makes records available in a format suitable for syndication and aggregation.  Access our OpenSearch API at:</p>
 					<br/>
-					<p><a target="_blank" href="/geoportal/rest/find/document">http://hydro10.sdsc.edu/geoportal/rest/find/document</a></p>
+					<p><a target="_blank" href="http://search.criticalzone.org/czoportal/rest/find/document">http://search.criticalzone.org/czoportal/rest/find/document</a></p>
 				</div>
 			</div>
 		</div>
@@ -235,12 +240,12 @@
 				<hr/>
 
 				<p>Example 1 - click the following URL to query the description of our OpenSearch API and return the results as an XML document.</p>
-					<p><a target="_blank" href="/geoportal/openSearchDescription">http://hydro10.sdsc.edu/geoportal/openSearchDescription</a></p>
+					<p><a target="_blank" href="http://search.criticalzone.org/czoportal/openSearchDescription">http://search.criticalzone.org/czoportal/openSearchDescription</a></p>
 
 				<hr/>
 
 				<p>Example 2 - click the following URL to initiate a search that returns all records with the keyword 'bathymetry' as a GeoRSS XML document:</p>
-				<p><a target="_blank" href="/geoportal/rest/find/document?searchText=keywords:%20bathymetry">http://hydro10.sdsc.edu/geoportal/rest/find/document?searchText=keywords:%20bathymetry</a></p>
+				<p><a target="_blank" href="http://search.criticalzone.org/czoportal/rest/find/document?searchText=keywords:%hydrology">http://search.criticalzone.org/czoportal/rest/find/document?searchText=keywords:%20hydrology</a></p>
 			</div>
 		</div>
 	</div>
@@ -255,7 +260,7 @@
 				<div>
 					<p>SOLR provides blazing-fast full-text and faceted search through a standard REST interface.  It's the driving force behind our <a href="/discover/">Discover</a> page.  Access our SOLR REST API at:</p>
 					<br/>
-					<p><a target="_blank" href="/solr/collection1/select">http://hydro10.sdsc.edu/solr/collection1/select</a></p>
+					<p><a target="_blank" href="/solr/collection1/select">http://maxim.ucsd.edu/solr/collection1/select</a></p>
 				</div>
 			</div>
 		</div>
@@ -270,7 +275,7 @@
 				<hr/>
 
 				<p>Example 1 - click the following URL to initiate a SOLR <i>select</i> query that return the first 20 metadata records for the marine debris category as a JSON document:</p>
-				<p><a target="_blank" href="/solr/collection1/select?&q=*+sys.src.collections_ss:%20(Issue|Marine_Debris)&rows=20&wt=json">http://hydro10.sdsc.edu/solr/collection1/select?&q=*+sys.src.collections_ss:%20(Issue|Marine_Debris)&rows=20&wt=json</a></p>
+				<p><a target="_blank" href="/solr/collection1/select?&q=*+sys.src.collections_ss:%20(Issue|Marine_Debris)&rows=20&wt=json">http://maxim.ucsd.edu/solr/collection1/select?&q=*+sys.src.collections_ss:%20(Issue|Marine_Debris)&rows=20&wt=json</a></p>
 			</div>
 		</div>
 	</div>
@@ -280,7 +285,7 @@
     <div class="footer container">
 	<div class="row">
 		<div class="span12">
-			<a href="mailto:portal@westcoastoceans.org">Feedback? email: ec_apps@sdsc.edu</a>
+			<a href="mailto:ec_apps@sdsc.edu">Feedback? email: ec_apps@sdsc.edu</a>
 			<span class="pull-right"><a class="subdued" href="/connect">API ACCESS</a></span>
 		</div>
 	</div>
